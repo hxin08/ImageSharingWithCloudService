@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharingWithCloudService", "ImageSharingWithCloudService\ImageSharingWithCloudService.csproj", "{B24E33DD-272A-4E8E-8242-E3A90FF34FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharingWithCloudService.Tests", "ImageSharingWithCloudService.Tests\ImageSharingWithCloudService.Tests.csproj", "{086B2AD3-7E7A-478F-82B4-C3C89F9FD876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharingWorkerRoleWithSBQueue", "ImageSharingWorkerRoleWithSBQueue\ImageSharingWorkerRoleWithSBQueue.csproj", "{FCAA6E30-2282-496B-A960-9BA8469920FB}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureCloudService1", "AzureCloudService1\AzureCloudService1.ccproj", "{2A902E3C-E767-4F68-9129-35E4618D0CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B24E33DD-272A-4E8E-8242-E3A90FF34FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24E33DD-272A-4E8E-8242-E3A90FF34FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24E33DD-272A-4E8E-8242-E3A90FF34FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24E33DD-272A-4E8E-8242-E3A90FF34FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086B2AD3-7E7A-478F-82B4-C3C89F9FD876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086B2AD3-7E7A-478F-82B4-C3C89F9FD876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086B2AD3-7E7A-478F-82B4-C3C89F9FD876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086B2AD3-7E7A-478F-82B4-C3C89F9FD876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCAA6E30-2282-496B-A960-9BA8469920FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAA6E30-2282-496B-A960-9BA8469920FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAA6E30-2282-496B-A960-9BA8469920FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAA6E30-2282-496B-A960-9BA8469920FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A902E3C-E767-4F68-9129-35E4618D0CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A902E3C-E767-4F68-9129-35E4618D0CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A902E3C-E767-4F68-9129-35E4618D0CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A902E3C-E767-4F68-9129-35E4618D0CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

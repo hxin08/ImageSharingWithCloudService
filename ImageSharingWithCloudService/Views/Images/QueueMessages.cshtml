@@ -1,0 +1,29 @@
+﻿@model List<ImageSharingWithCloudService.Models.QueueMessage>
+
+@{
+    ViewBag.Title = "Queue Messages";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Insertion Time</th>
+        <th>Message</th>
+    </tr>
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>
+                @entry.Id
+            </td>
+            <td>
+                @entry.InsertionTime
+            </td>
+            <td>
+                @entry.Message
+            </td>
+        </tr>
+    }
+</table>

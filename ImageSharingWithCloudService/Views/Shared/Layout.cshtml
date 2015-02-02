@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head id="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <title>@ViewBag.Title </title>
+
+
+    @*
+        @Styles.Render("~/Content/css")
+    *@
+    @{
+       // var SiteCss = ViewBag.isAda ? "Site_ADA.css" : "Site.css";
+        var SiteCssUrl = Url.Content("~/Content/" + "Site.css");
+
+    }
+    <link href="@SiteCssUrl " rel="stylesheet" type="text/css" />
+
+    @*
+        @Scripts.Render("~/bundles/modernizr")
+    *@
+    <script src="@Url.Content("~/Scripts/modernizr-2.6.2.js")"></script>
+</head>
+<body class="twoColumnHdrFtr">
+    <div id="container">
+        <header id="header">
+            <h1><img width="750" height="370" alt="[Jive Talkin choirboy]" src="@Url.Content("~/Images/petra.jpg")" /></h1>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                <li>@Html.ActionLink("Upload", "Upload", "Images")</li>
+                <li>@Html.ActionLink("List All", "ListAll", "Images")</li>
+                <li>@Html.ActionLink("List By User", "ListByUser", "Images")</li>
+                <li>@Html.ActionLink("List By Tag", "ListByTag", "Images")</li>
+                <li>@Html.ActionLink("Approve", "Approve", "Images")</li>
+                <li>@Html.ActionLink("Delete", "Delete", "Account")</li>
+                <li>@Html.ActionLink("Supervise", "ImageViews", "Images")</li>
+                <li>@Html.ActionLink("Messages", "QueueMessages", "Images")</li>
+            </ul>
+        </nav>
+        <aside id="sidebar">
+            <h1>Links</h1>
+            <p><a href="http://www.google.com">My Google</a></p>
+            <p><a href="http://www.stevens.edu">Stevens</a></p>
+        </aside>
+        <article id="content">
+            @RenderBody()
+        </article>
+        <footer id="footer">
+            <p>&copy; @DateTime.Now.Year Tariq Elouzeh</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
